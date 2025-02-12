@@ -1,0 +1,15 @@
+- name: check a number is graterthan 15 or not
+  hosts: local
+  connection: local
+  vars:
+    number: 30
+  tasks: 
+  - name: print a number if it is graterthan 15
+    ansible.builtin.debug:
+      msg: "given number {{ number }} is graterthan 15"
+    when: number > 15
+
+  - name: print a number if it is lessthan or equal to 15
+    ansible.builtin.debug:
+      msg: "given number {{ number }} is lessthan or equal to 15"
+    when: number <= 15        
