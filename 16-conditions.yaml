@@ -10,5 +10,6 @@
   - name: install nginx if ubuntu
     ansible.builtin.apt:
       name: nginx
-      state: present
+      state: installed
+      
 
