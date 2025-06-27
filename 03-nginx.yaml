@@ -1,5 +1,6 @@
 - name: playbook name is nginx install and start nginx
   hosts: frontend 
+  become: yes #ila isthe sudo access teeskunnam ani ardham
   tasks:
   - name: 1st task is installing nginx 
     ansible.builtin.package: 
