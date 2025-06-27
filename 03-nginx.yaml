@@ -1,6 +1,6 @@
 - name: playbook name is nginx install and start nginx
   hosts: frontend 
-  become: yes #ila isthe sudo access teeskunnam ani ardham
+  become: yes #ila isthe sudo access istunnam ani ardham
   tasks:
   - name: 1st task is installing nginx 
     ansible.builtin.package: 
@@ -18,7 +18,10 @@
 #started ----> start cheyyamani
 #stopped ----> stop cheyyamani
 #restarted ----> restart cheyyamani
-#reloaded ----> reload cheyyamani
+#reloaded ----> reload cheyyamani 
+
+
+# e playbook dwara manam server ni touch cheyyakunda nginx ni install chesaam.nginx ni run chesaam.
 
 
 
