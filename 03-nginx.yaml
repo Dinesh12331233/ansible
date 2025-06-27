@@ -1,0 +1,23 @@
+- name: playbook name is nginx install and start nginx
+  hosts: frontend 
+  tasks:
+  - name: 1st task is installing nginx 
+    ansible.builtin.package: 
+      name: nginx 
+      state: present #ila isthe install cheyyamani 
+
+  - name: 2nd task is start nginx 
+    ansible.builtin.service: 
+      name: nginx 
+      state: started 
+      enabled: yes #enable cheyyamani
+
+#present ---> insatll cheyyamani
+#absent ----> remove cheyyamani
+#started ----> start cheyyamani
+#stopped ----> stop cheyyamani
+#restarted ----> restart cheyyamani
+#reloaded ----> reload cheyyamani
+
+
+
