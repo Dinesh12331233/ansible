@@ -1,0 +1,7 @@
+- name: Playbook name is Hello world
+  hosts: local #hello world ni print cheyyadaniki nodes ni connect avvalsina pani ledu 
+  connection: local # ila isthe inka username and password adagadhu.
+  tasks:
+  - name: print hello world #name of the task 
+    ansible.builtin.debug: 
+      msg: "Hello World" 
