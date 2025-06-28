@@ -17,9 +17,9 @@
       msg: "{{ GREETING }}"   
 
 #variable preference order:
-# 1. command line lo manam pass chesina arguments
-# 2. Task variable  
-# 3. File lo define chesina variable
-# 4. prompt lo ichina variable 
+# 1. COMMAND LINE lo manam pass chesina arguments
+# 2. TASK variable  
+# 3. FILE lo define chesina variable
+# 4. PROMPT lo ichina variable 
 # 5. PLAY level variable     
-# 6.
+# 6. INVENTORY lo ichina variable  
