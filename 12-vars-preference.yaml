@@ -1,8 +1,8 @@
 - name: understanding vars preference 
   hosts: local 
   connection: local 
-  vars: 
-    GREETING: "Hello from PLAY"
+  # vars: 
+  #   GREETING: "Hello from PLAY"
   # vars_files: 
   # - course.yaml 
   # vars_prompt: 
@@ -21,4 +21,5 @@
 # 2. Task variable  
 # 3. File lo define chesina variable
 # 4. prompt lo ichina variable 
-# 5.     
+# 5. PLAY level variable     
+# 6.
