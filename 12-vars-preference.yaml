@@ -11,7 +11,12 @@
     private: false #ila isthe manam enter chesindhi manaki kanipistundi 
   tasks: 
   - name: print the greeting 
-    vars:
-      GREETING: "Hello from TASK"
+    # vars:
+    #   GREETING: "Hello from TASK"
     ansible.builtin.debug: 
       msg: "{{ GREETING }}"   
+
+#variable preference order:
+# 1. command line lo manam pass chesina arguments
+# 2. Task variable  
+# 3.     
