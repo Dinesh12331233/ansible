@@ -19,4 +19,5 @@
 #variable preference order:
 # 1. command line lo manam pass chesina arguments
 # 2. Task variable  
-# 3.     
+# 3. File lo define chesina variable
+# 4.      
