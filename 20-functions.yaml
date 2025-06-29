@@ -10,6 +10,15 @@
 
   - name: print names 
     ansible.builtin.debug: 
-      msg: "Hello {{ PERSONS | split(',') }}"  # split function. cama use chesi split cheyyamani cheptunnam.
+      msg: "Hello {{ PERSONS | split(',') }}"  # split function. cama use chesi split cheyyamani cheptunnam. 
+
+  - name: convert map into list 
+    vars: 
+      course: 
+        name: ansible 
+        duration: 10Hrs 
+        trainer: sivakumar 
+    ansible.builtin.debug: 
+      msg: "Course info: {{ course | dict2items }}"  # Map nunchi List ki convert chestundhi.        
 
 
