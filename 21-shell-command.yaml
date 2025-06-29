@@ -4,3 +4,8 @@
   - name: redirect ls output to a file 
 #    ansible.builtin.command: "ls -ltr > /tmp/output.txt" 
     ansible.builtin.shell: "ls -ltr > /tmp/output.txt"  
+    register: command_result  # ls -ltr > /tmp/output.txt ee command yokka result command_result lo store avutundhi.
+
+  - name: print the outcome 
+    ansible.builtin.debug: 
+      msg: "{{ command_result }}"   
