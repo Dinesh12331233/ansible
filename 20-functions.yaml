@@ -49,9 +49,12 @@
 
   - name: check IP address is valid or not 
     vars: 
-      ip: "300.300.300.300" 
+      #ip: "300.300.300.300" 
+      ip: "192.168.0.1" 
     ansible.builtin.debug: 
-      msg: "{{ ip | ansible.utils.ipaddr }}"       
+      msg: "{{ ip | ansible.utils.ipaddr }}"   
+    # pip3.9 install netaddr ---> run this command in mobaxterm
+        
 
 
 
