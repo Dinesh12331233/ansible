@@ -4,4 +4,5 @@
   tasks: 
   - name: check undefined variable 
     ansible.builtin.debug: 
-      msg: "Hello {{ PERSON }}" 
+      msg: "Hello {{ PERSON | default('Ramesh') }}"  # PERSON ni ekkadina define chesthe aaa value teeskuntundi. okavela define cheyyakapothe default ga ramesh ani teeskuntundhi. 
+      
