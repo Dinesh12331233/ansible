@@ -54,6 +54,8 @@
     ansible.builtin.debug: 
       msg: "{{ ip | ansible.utils.ipaddr }}"   
     # pip3.9 install netaddr ---> run this command in mobaxterm
+    # valid ite IP address ni chupistundi.  invalid ite false ani chupistundi
+
         
 
 
