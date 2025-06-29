@@ -19,6 +19,22 @@
         duration: 10Hrs 
         trainer: sivakumar 
     ansible.builtin.debug: 
-      msg: "Course info: {{ course | dict2items }}"  # Map nunchi List ki convert chestundhi.        
+      msg: "Course info: {{ course | dict2items }}"  # Map nunchi List ki convert chestundhi. 
+
+
+ #  "msg": "Course info: [{'key': 'name', 'value': 'ansible'}, {'key': 'duration', 'value': '10Hrs'}, {'key': 'trainer', 'value': 'sivakumar'}]"        
+
+  - name: convert list into map  
+    vars: 
+      course: 
+      - {'key': 'name', 'value': 'ansible'} 
+      - {'key': 'duration', 'value': '10Hrs'} 
+      - {'key': 'trainer', 'value': 'sivakumar'}
+    ansible.builtin.debug: 
+      msg: "Course info: {{ course | items2dict }}" 
+
+
+
+            
 
 
