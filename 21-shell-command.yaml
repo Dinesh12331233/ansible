@@ -2,10 +2,20 @@
   hosts: frontend 
   tasks: 
   - name: redirect ls output to a file 
-#    ansible.builtin.command: "ls -ltr > /tmp/output.txt" 
+    #ansible.builtin.command: "ls -ltr > /tmp/output.txt" 
     ansible.builtin.shell: "ls -ltr > /tmp/output.txt"  
-    register: command_result  # ls -ltr > /tmp/output.txt ee command yokka result command_result lo store avutundhi.
+    register: command_result  # ls -ltr > /tmp/output.txt ee command yokka result command_result lo store avutundhi. registering the output into a variable.
 
   - name: print the outcome 
     ansible.builtin.debug: 
-      msg: "{{ command_result }}"   
+      msg: "{{ command_result }}" 
+
+# failed: false ante true ani ardham. rc anedhi exit status lagaa. rc=result code        
+
+  - name: registering the output 
+    ansible.builtin.command: "ls -ltr" 
+    register: command_output 
+
+  - name: print the outcome 
+    ansible.builtin.debug: 
+      msg: "{{ command_output }}"   
