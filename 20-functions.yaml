@@ -10,6 +10,6 @@
 
   - name: print names 
     ansible.builtin.debug: 
-      msg: "Hello {{ PERSONS }}"  
-      
-         
+      msg: "Hello {{ PERSONS | split(',') }}"  # split function. cama use chesi split cheyyamani cheptunnam.
+
+
