@@ -1,8 +1,15 @@
 - name: functions 
   hosts: local 
   connection: local 
+  vars: 
+    PERSONS: "Ramesh, Suresh, Raheem, Joseph"
   tasks: 
   - name: check undefined variable 
     ansible.builtin.debug: 
       msg: "Hello {{ PERSON | default('Ramesh') }}"  # PERSON ni ekkadina define chesthe aaa value teeskuntundi. okavela define cheyyakapothe default ga ramesh ani teeskuntundhi. 
+
+  - name: print names 
+    ansible.builtin.debug: 
+      msg: "Hello {{ PERSONS }}"  
       
+         
