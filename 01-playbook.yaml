@@ -1,4 +1,4 @@
-- name: ping the server #this is playbook name
+- name: ping the server #this is PLAY name
   hosts: frontend
   tasks: #List of tasks
   - name: ping the server #name of the task 

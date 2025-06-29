@@ -13,12 +13,18 @@
       state: started 
       enabled: yes #enable cheyyamani
 
+
+# ansible.builtin.package ki
 #present ---> insatll cheyyamani
-#absent ----> remove cheyyamani
+#absent ----> remove cheyyamani 
+
+
+# ansible.builtin.service ki 
 #started ----> start cheyyamani
 #stopped ----> stop cheyyamani
 #restarted ----> restart cheyyamani
 #reloaded ----> reload cheyyamani 
+#enabled: yes ani isthe enable avutundhi
 
 
 # e playbook dwara manam server ni touch cheyyakunda nginx ni install chesaam.nginx ni run chesaam.

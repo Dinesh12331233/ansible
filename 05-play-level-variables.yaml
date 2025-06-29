@@ -13,3 +13,5 @@
   - name: print course information again 
     ansible.builtin.debug: 
       msg: "Hello course is {{ COURSE }}, course duration is {{ DURATION }}, trainer is {{ TRAINER }}"     
+
+# Play level variables are global variables.      
