@@ -1,6 +1,7 @@
 - name: user creation # Imagine there is no user module in ansible 
   hosts: local 
   connection: local 
+  become: yes 
   tasks: 
   - name: check roboshop user exist or not 
     ansible.builtin.command: id roboshop 
@@ -13,4 +14,4 @@
 
   - name: user already exist 
     ansible.builtin.debug: 
-      msg: "roboshop user already exist"   
+      msg: "roboshop user already exist"    
