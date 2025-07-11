@@ -1,0 +1,5 @@
+- name: ping the server #this is PLAY name
+  hosts: keys 
+  tasks: #List of tasks
+  - name: ping the server #name of the task 
+    ansible.builtin.ping: 
